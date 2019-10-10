@@ -10,7 +10,7 @@ steps:
 
 ## Deploy to "Cloud Run"
 - name: 'gcr.io/cloud-builders/gcloud'
- args: ['beta', 'run', 'deploy', 'timezone-shift', '--image', 'gcr.io/$PROJECT_ID/timezone-shift:latest', '--region', 'us-east-1', '--platform', 'managed']
+  args: ['beta', 'run', 'deploy', 'timezone-shift', '--image', 'gcr.io/$PROJECT_ID/timezone-shift:latest', '--region', 'us-east-1', '--platform', 'managed', '--quiet']
 
 images: 
 - 'gcr.io/$PROJECT_ID/timezone-shift'
