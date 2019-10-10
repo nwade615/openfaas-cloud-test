@@ -12,5 +12,6 @@ steps:
 #- name: 'gcr.io/cloud-builders/gcloud'
 #  args: ['beta', 'run', 'deploy', 'timezone-shift', '--image', 'gcr.io/$PROJECT_ID/timezone-shift:$REVISION_ID', '--region', 'us-central-1']
 
+
 images: 
 - 'gcr.io/$PROJECT_ID/timezone-shift'
